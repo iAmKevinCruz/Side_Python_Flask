@@ -1,7 +1,10 @@
 import json
 from flask import Flask, render_template, abort, request
 from mock_data import mock_data
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 # put dict here
 me = {
